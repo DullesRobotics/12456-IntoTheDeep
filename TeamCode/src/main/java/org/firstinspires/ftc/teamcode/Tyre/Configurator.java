@@ -18,12 +18,7 @@ public class Configurator {
                 driveTrainMotors[0],
                 driveTrainMotors[1],
                 driveTrainMotors[2],
-                driveTrainMotors[3],
-                new Motor(robot, "LIFTRIGHT", LIFTRIGHT, false),
-                new Motor(robot, "LIFTLEFT", LIFTLEFT, false),
-                new Motor(robot, "INTAKE", INTAKE, false),
-                new Servo(robot, "OUTAKE", OUTAKE),
-                new Servo(robot, "PLANE", PLANE)
+                driveTrainMotors[3]
         });
 
     }
