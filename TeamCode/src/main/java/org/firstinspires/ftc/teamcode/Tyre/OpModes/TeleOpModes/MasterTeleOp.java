@@ -5,15 +5,16 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
 import org.firstinspires.ftc.teamcode.RobotManager.MechanumDriveTrain;
 import org.firstinspires.ftc.teamcode.RobotManager.StandardDriveTrain;
+import org.firstinspires.ftc.teamcode.RobotManager.SwerveDriveTrain;
 import org.firstinspires.ftc.teamcode.Tyre.Configurator;
 import org.firstinspires.ftc.teamcode.Tyre.ControlCenterTeleOp;
 
 @TeleOp
 public class MasterTeleOp extends LinearOpMode {
-    private MechanumDriveTrain baseRobot;
+    private SwerveDriveTrain baseRobot;
     @Override
     public void runOpMode() throws InterruptedException {
-        baseRobot = new MechanumDriveTrain(this);
+        baseRobot = new SwerveDriveTrain(this);
         baseRobot.addHardware(Configurator.getHardware(baseRobot));
 
         waitForStart();
